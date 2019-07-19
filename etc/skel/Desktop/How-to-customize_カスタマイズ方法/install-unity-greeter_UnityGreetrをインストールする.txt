@@ -1,0 +1,28 @@
+==Japanese==
+unity-greeterをインストールする方法を解説します。
+unity-greeterはSereneLinuxにも採用されているGreeter（LightDMのログインUI）の一種です。
+本来unity-desktopに適用させるためのGreeterですが、設定ファイルを書き換えることによって他のデスクトップ環境でもインストールできます。
+
+1:unity-greeterをインストールする
+  コマンドを実行します。
+  $ sudo apt-get --no-install-recommends install unity-greeter --yes
+
+2:問題のある設定ファイルを削除する
+  Root権限で設定ファイルが存在するディレクトリを開きます
+  $ sudo thunar /usr/share/lightdm/lightdm.conf.d/
+
+  この中に何も入っていなければそのまま次に進んでください
+  中に「50-unity-greeter.conf」というファイルが有ればそれを削除してください
+  $ sudo rm /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+
+3:新しい設定ファイルを作成する
+  Root権限で新しい設定ファイルを作成します。
+  $ sudo touch /usr/share/lightdm/lightdm.conf.d/50-xfce-greeter.conf
+  
+  作成した設定ファイルに以下の内容をコピーペーストしてください。
+
+[SeatDefaults]
+greeter-session=unity-greeter
+user-session=xfce
+
+  「user-session」は任意のデスクトップ環境の名前に置き換えてください。

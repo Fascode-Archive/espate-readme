@@ -1,0 +1,15 @@
+==English==
+Copy over the ubiquity-slideshow folder in the same hierarchy as this directory to the next higher hierarchy (/usr/share/).
+Then edit the "English" HTML file in the slides directory (/usr/share/ubiquity-slideshow/slides).
+Japanese and other languages edit HTML files in each language directory in l10n directory (/usr/share/ubiquity-slideshow/slides/l10n).
+Finally, set the HTML permissions of all slides to 755.
+$ sudo chmod -R 755 /uer/share/ubiquity-slideshow/slides/
+Editing of the slide show is complete.
+
+==Japanese==
+このディレクトリと同じ階層にあるubiquity-slideshowフォルダを2つ上の階層（/usr/share/）に上書きコピーします。
+その後、slidesディレクトリ（/usr/share/ubiquity-slideshow/slides）にあるHTMLファイルを"英語で"編集します。
+日本語や他の言語はl10nディレクトリ（/usr/share/ubiquity-slideshow/slides/l10n）内にある各言語ディレクトリ内のHTMLファイルを編集します。
+最後にすべてのスライドのHTMLのパーミッションを755にします。
+$ sudo chmod -R 755 /uer/share/ubiquity-slideshow/slides/
+これでスライドショーの編集は完了です。

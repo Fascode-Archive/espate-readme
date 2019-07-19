@@ -1,0 +1,4 @@
+==English==
+Please read /usr/share/ubiquity-slideshow/slides/Customize.txt this for details.
+==Japansese==
+詳しくは/usr/share/ubiquity-slideshow/slides/Customize.txtを御覧ください。

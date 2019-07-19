@@ -1,0 +1,8 @@
+Package: espate-readme
+Priority: optional
+Section: main
+Maintainer: Serene Team <serenelinux.dev@gmail.com>
+Architecture: amd64
+Version: 1.0.0
+Depends: ubiquity-slideshow-espate
+Description: This is a customization manual for EspateOS.

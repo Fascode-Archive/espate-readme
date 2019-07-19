@@ -1,0 +1,17 @@
+==English==
+User directories are usually not copied to the installer disc.
+If you copy a user's configuration, you can copy the configuration file to the skeleton directory and apply it to other users and installer disks.
+The skeleton directory path is replaced by /etc/skel and /etc/skel is replaced by ~/.
+For example, to apply Conky's configuration file ~/.conkyrc to other users, copy it to /etc/skel/.conkyrc and apply it to all users.
+Copy the configuration file of GTK3.0 or Xfce4 using it.
+Since each setting file changes with each software, it is necessary to search by self.
+For example, Xfce4 is the ~/.config/xfce4/directory.
+
+==Japanese==
+ユーザーディレクトリは通常、インストーラディスクにコピーされません。
+ユーザーの設定をコピーするなら、設定ファイルをスケルトンディレクトリにコピーすることで他のユーザーやインストーラディスクにも適用させることができます。
+スケルトンディレクトリのパスは/etc/skelで/etc/skelは~/で置き換えられます。
+たとえばConkyの設定ファイルである~/.conkyrcを他のユーザーに適用させるには/etc/skel/.conkyrcにコピーすることですべてのユーザーに適用させることができます。
+それを利用してGTK3.0やXfce4の設定ファイルをコピーします。
+それぞれの設定ファイルはそれぞれのソフトによって変化するため自力で探す必要があります。
+たとえばXfce4は~/.config/xfce4/ディレクトリです。
